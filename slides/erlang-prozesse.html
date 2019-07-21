@@ -1,0 +1,20 @@
+<h2>Aktor-Modell und Prozesse</h2>
+
+<img src="./resources/Actor-Model -- draw.io.svg" alt="Actormodel" style="object-fit: contain; width: 500px; height: 500px; margin: -50px 0" />
+
+<ul>
+    <li class="fragment">Aktoren kommunizieren asynchron über Nachrichten miteinander</li>
+	<li class="fragment">Erlang: 1 Aktor == 1 Prozess</li>
+    <li class="fragment">Prozesse sind leichtgewichtig und vollständig voneinander isoliert</li>
+	<li class="fragment">In einem Prozess läuft alles sequentiell ab &mdash; Nachricht für Nachricht</li>
+</ul>
+
+<aside class="notes">
+    <ul>
+        <li>Prozesse als Basis der Skalierbarkeit</li>
+        <li>Es ist egal, ob der Prozess auf dem gleichen System läuft oder ganz woanders</li>
+        <li>Innerhalb eines Prozesses läuft die Verarbeitung sequentiell, aber man kann den gleichen Prozess mehrfach
+            gleichzeitig starten</li>
+        <li>Preemptive Scheduler: Ist nicht auf Kooperation der Prozesse angewiesen</li>
+    </ul>
+</aside>

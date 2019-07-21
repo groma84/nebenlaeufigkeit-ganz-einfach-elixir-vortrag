@@ -1,0 +1,1 @@
+decktape --size 1920x1080 --pause 3000 --load-pause 3000 reveal http://localhost:8000/ Nebenläufigkeit_ganz_einfach_mit_Elixir_und_Erlang--Martin_Grotz--Herbstcampus-2019.pdf
