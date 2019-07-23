@@ -1,9 +1,34 @@
-<h2>TODO/h2>
+<h2>Parallelisierung vs. Nebenläufigkeit</h2>
 
-	<img src="./resources/Schedulers_without_starvation.png" alt="Erlang VM Scheduler">
+<p>TODO: Bild, Links auffächern in f(a[0]), f(a[1]), ... - rechts dagegen nebeneinander laufend f1(a), f2(b), f3(c) ...
+</p>
+<img src="./resources/Schedulers_without_starvation.png" alt="Erlang VM Scheduler">
 
-	<aside class="notes">
-		<ul>
-			<li></li>
-		</ul>
-	</aside>
+
+
+<aside class="notes">
+	<ul>
+		<li>Parallelisierung
+			<ul>
+				<li>Kooperation von abhängigen,
+					kommunizierenden Prozessen
+					zur Lösung eines Problems </li>
+				<li>Leistungssteigerung durch
+					Zeitersparnis</li>
+				<li>Ziele: Beschleunigung,
+					Skalierbarkeit</li>
+			</ul>
+		</li>
+
+		<li>
+			Nebenläufigkeit
+			<ul>
+				<li>Kooperation von unabhängigen
+					Prozessen, die verschiedene
+					Aufgaben haben </li>
+				<li>verteilte Systeme</li>
+				<li>Ziele: Sicherheit, Fehlertoleranz, Skalierbarkeit</li>
+			</ul>
+		</li>
+	</ul>
+</aside>
