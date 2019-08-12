@@ -1,13 +1,12 @@
-<h2>Cooperative vs. preemptive Scheduler</h2>
+<h2>Cooperative vs. preemptive scheduler</h2>
 
 <img src="./resources/Schedulers_without_starvation.png" alt="Erlang VM Scheduler">
 
 <aside class="notes">
-    <ul>
-        <li>selbst Go kann da nicht mithalten</li>
+	<ul>
 		<li>Beispiel: Webserver, der eine Simulation ausführt mit User Daten</li>
 		<li>Ergebnis: Cooperative -> keiner bekommt eine Antwort, bis A1 fertig ist</li>
 		<li>Mit Erlang: A2 bis A5 bekommen nach wenigen ms eine Antwort, nur A1 muss lange warten</li>
 		<li></li>
-    </ul>
+	</ul>
 </aside>

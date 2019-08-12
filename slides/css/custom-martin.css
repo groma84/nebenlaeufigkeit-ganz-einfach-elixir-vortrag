@@ -5,6 +5,8 @@
  */
  @import url(../../lib/font/league-gothic/league-gothic.css);
  @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+ @import url(../../lib/font/Caveat/Caveat.css);
+
  /**
   * Solarized colors by Ethan Schoonover
   */
@@ -134,7 +136,9 @@
    width: 70%;
    margin: 20px auto;
    padding: 5px;
-   font-style: italic;
+   font-style: normal;
+  font-family: "Caveat", serif;
+  font-size: 2rem;
    background: rgba(255, 255, 255, 0.05);
    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
  
@@ -231,7 +235,7 @@
   * IMAGES
   *********************************************/
  .reveal section img {
-   margin: 15px 0px;
+   margin: 10px 0px;
   }
  
  .reveal section img.plain {
@@ -376,11 +380,28 @@ span.clouditem {
     letter-spacing: -0.015em;
 }
 
+.reveal .column-with-border {
+  border: 1px solid black;
+  max-width: 30%;
+  width: 30%;
 
-/* Company logo ---------------------------------------- */
-body {
-    background-image: url(../resources/Softwerkskammer.png);
-    background-size: 10%;
-    background-repeat: no-repeat;
-    background-position: 3% 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.reveal .column-with-border h3 {
+  font-size: 2rem;
+  justify-self: center;
+  margin-top: 0.5rem;
+}
+
+.reveal .column-with-border ul {
+  font-size: 1rem;
+  margin-left: 1.75rem;
+  margin-right: 0.25rem;
+}
+
+.reveal .column-with-border ul > li{
+  margin: 0.5rem 0;
 }
