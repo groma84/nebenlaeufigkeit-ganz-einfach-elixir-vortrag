@@ -4,6 +4,15 @@
 
 <aside class="notes">
 	<ul>
-		<li></li>
+		<li>IdManager: Die generierten IDs stammen aus einem festgelegten Pool, der wird einmal generiert und sich dann
+			gemerkt,
+			damit es schneller geht. Erste Version hat immer neu generiert -> speichern hat 5-10 Sekunden gedauert und
+			zu Doppel-Button-Klicks geführt.
+		</li>
+		<li>FilePath: Verschiedene Pfade im System, werden zur Laufzeit einmal ausgelesen und sich dann gemerkt</li>
+		<li>Storage Access Serializer: "Datenbank" des Systems sind JSON-Files auf der Festplatte -> Zugriff muss
+			serialisiert werden. <br />
+			Praktische Eigenschaft eines Erlang-Prozesses ausgenutzt: Jede Anfrage wird nacheinander bearbeitet,
+			"Singleton-Prozess" -> Alle Anfragen werden seriell abgearbeitet</li>
 	</ul>
 </aside>
