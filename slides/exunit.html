@@ -1,0 +1,27 @@
+<div style="display: flex; flex-direction: column; padding-bottom: 2rem; align-items: center;">
+    <h2>ExUnit</h2>
+    <pre class="fragment"><code class="elixir">defmodule Kartenwunsch.Liste.SumTest do
+    use ExUnit.Case, async: true
+
+    @kartenwunsch1 %Kartenwunsch{
+        normalpreis: 1,
+        ermaessigt: 1,
+        schueler: 1
+      }
+
+    test "A sum of multiple entries sums the numbers" do
+        assert Kartenwunsch.Liste.Sum.gesamtsumme([@kartenwunsch1, @kartenwunsch1]) == %Summen{
+                normalpreis: 2,
+                ermaessigt: 2,
+                schueler: 2}
+    end
+end</code></pre>
+
+
+</div>
+
+<aside class="notes">
+    <ul>
+        <li></li>
+    </ul>
+</aside>

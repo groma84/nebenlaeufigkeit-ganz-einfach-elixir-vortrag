@@ -1,0 +1,27 @@
+<div style="display: flex; flex-direction: column; padding-bottom: 2rem; align-items: center;">
+    <h2>ExUnit DocTest</h2>
+    <pre class="fragment"><code class="elixir">defmodule Lochat.Demo do
+  @doc """
+  Adds two numbers
+  iex> Lochat.Demo.add(3, 4)
+  7
+  iex> Lochat.Demo.add(-1, -1)
+  -2
+  """
+  def add(a, b) do
+    a + b
+  end
+end</code></pre>
+
+    <pre class="fragment"><code class="elixir">defmodule Lochat.DemoTest do
+  use ExUnit.Case
+
+  doctest Lochat.Demo
+end</code></pre>
+</div>
+
+<aside class="notes">
+    <ul>
+        <li></li>
+    </ul>
+</aside>
